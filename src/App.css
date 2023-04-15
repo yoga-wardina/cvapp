@@ -12,8 +12,6 @@ html{
   padding: 0;
   margin: 0;
 }
-
-
 body{
   font-family: 'Oswald', sans-serif;
   color: white;
@@ -24,155 +22,224 @@ body{
   background-image: url("assets/bgImage.png");
   background-size: cover;
 }
-a{
-  text-decoration: none;
-  color: inherit;
-}
-.globalContainer{
-  scroll-margin: 20px;
-  scroll-behavior: smooth;
-  position: absolute;
-  overflow-y: scroll;
-  height: 100vh;
-  width: 100%;
-}
-.sideBar{
-  display: flex;
-  align-items: center;
-  width: 130px;
-  height: 100vh;
-  position: fixed;
-}
-.center{
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.navLink {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: var(--color--gray);
-  border-bottom: 1px solid var(--color--gray);
-}
 
-.navLink:hover{
-  transition: .3s ease-in;
-  border-right: 2px solid var(--color--pink);
-  color: var(--color--pink);
-}
-.active{
-  transition: .3s ease-in;
-  border-right: 2px solid var(--color--cyan);
-  color: var(--color--cyan);
-}
 
-.container{
-  cursor: default;
-  margin-left: 130px;
-}
-.testing{
-  display: block;
-  height: 1000px;
-}
-.headings{
-  padding-top: 20px;
-  padding-left: 50px;
-}
-
-.welcome{
-  width: fit-content;
-  margin-top: 10vh;
-  margin-left: 30px;
-}
-.welcome>h1{
-  font-weight: bolder;
-  margin: 0;
-  padding: 0;
-}
-.shadow{
-  text-shadow: -5px -3px 0 var(--color--pink) ;
-}
-.cta{
-  margin-top: 30px;
-  margin-left: 20px;
-  width: 150px;
-  height: 50px;
-  text-align: center;
-}
-.cta > a{
-  color: var(--color--pink);
-  border: 1px solid var(--color--pink);
-  padding: 10px 20px;
-}
-.cta > a:hover{
-  transition: .3s ease-in;
-  color: var(--color--cyan);
-  border: 1px solid var(--color--cyan);
-}
-/* fancy font sizing and styling */
-.fancyFont{
-  font-family: 'La Belle Aurore', cursive;
-  font-weight: normal;
-}
-.size50{
-  font-size: 50px;
-}
-.size30{
-  font-size: 19px;
-}
-.size15{
-  font-size: 20px;
-}
-.size-paragraph{
-  width: 700px;
-  font-size: 15px;
-}
-.indent{
-  margin-left: 20px;
-}
-
-.scroll{
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 2rem;
-}
-.scroll>img, .scroll-right >img{
-  object-fit: cover;
-  width: 17px;
-}
-.scroll-right{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 2rem;
-  float: right;
-  margin-left: auto;
-  margin-right: 0px;
-  right: 0;
-}
-
-.animated-image {
-  position: absolute;
-  bottom: 2rem;
-  animation: moveUpDown 2s ease-in-out infinite;
-}
-
-@keyframes moveUpDown {
-  0% {
-    transform: translateY(0);
+/* Global Styling and Containers CSS */
+  .container{
+    cursor: default;
+    margin-left: 130px;
   }
-  50% {
-    transform: translateY(-20px);
+  .testing{
+    display: block;
+    height: 1000px;
   }
-  100% {
-    transform: translateY(0);
+  .shadow{
+    text-shadow: -5px -3px 0 var(--color--pink) ;
   }
-}
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  .globalContainer{
+    scroll-margin: 20px;
+    scroll-behavior: smooth;
+    position: absolute;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+  }
+/* Global Styling and Containers CSS */
+
+
+/* NavBar CSS */
+  .sideBar{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 100vh;
+    position: fixed;
+  }
+  .center{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navLink {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color--gray);
+    border-bottom: 1px solid var(--color--gray);
+  }
+
+  .navLink:hover{
+    transition: .3s ease-in;
+    border-right: 2px solid var(--color--pink);
+    color: var(--color--pink);
+  }
+  .active{
+    transition: .3s ease-in;
+    border-right: 2px solid var(--color--cyan);
+    color: var(--color--cyan);
+  }
+
+/* NavBar CSS */
+
+
+/* Portfolio CSS */
+  .headings{
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
+  .welcome{
+    width: fit-content;
+    margin-top: 10vh;
+    margin-left: 30px;
+  }
+  .welcome>h1{
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cta{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+  }
+  .cta > a{
+    border: 1px solid;
+    padding: 10px 20px;
+    animation: changingColor 2.5s ease-in-out infinite;
+  }
+  @keyframes changingColor {
+    0% {
+      color: #03FFF5;
+      border-color: #03FFF5;
+    }
+    50% {
+      color: #FF0050;
+      border-color: #FF0050;
+    }
+    100% {
+      color: #03FFF5;
+      border-color: #03FFF5;
+    }
+  }
+  .cta > a:hover{
+    transition: .3s ease-in;
+    color: var(--color--cyan);
+    border: 1px solid var(--color--cyan);
+  }
+  .scroll{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 2rem;
+  }
+  .scroll>img, .scroll-right >img{
+    object-fit: cover;
+    width: 17px;
+  }
+  .scroll-right{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 2rem;
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+    right: 0;
+  }
+
+  .animated-image {
+    position: absolute;
+    bottom: 2rem;
+    animation: moveUpDown 2s ease-in-out infinite;
+  }
+
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+/* Home CSS */
+
+
+
+/* Portfolio CSS */
+  .portHeadings{
+    width: fit-content;
+    margin-left: 30px;
+  }
+  .portfolioGrid{
+    background-color: var(--color--dark-gray);
+    text-align: center;
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+  }
+  .noOverflow{
+    overflow: hidden;
+  }
+  .portfolioGridContent{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%;
+  }
+  .portfolioGridContent:hover{
+    transition:all 1.5s ease;
+    transform: scale(1.5,1.5);
+    opacity: 100%;
+  }
+  .link-inside-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+  }
+  .link-inside-div> img{
+    border-radius: 50px;
+    visibility: hidden;
+    object-fit: fill;
+    box-shadow: 0px 0px 10px #000000;
+    width: 10px;
+    aspect-ratio: 1/1;
+  }
+  .portfolioGridContent:hover .link-inside-div> img{
+    visibility: visible;
+    scale: 7;
+    transition:all .5s ease;
+  }
+  #resume,#portfolio, #contact{
+    background-color: var(--color--dark);
+  }
+/* Portfolio CSS */
+
 
 @media (max-aspect-ratio: 16/9) {
   /* media querry aspect ratio */
@@ -183,11 +250,6 @@ a{
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 div::-webkit-scrollbar {
   width: 5px; 
@@ -204,6 +266,7 @@ div::-webkit-scrollbar-thumb {
 div::-webkit-scrollbar-thumb:hover {
   background: var(--color--pink); 
 }
+
 
 /* Background-color codings */
 .bg-color-cyan{
@@ -237,4 +300,67 @@ div::-webkit-scrollbar-thumb:hover {
 }
 .color-pink{
   color: var(--color--pink);
+}
+
+
+/* font Size codings */
+.fancyFont{
+  font-family: 'La Belle Aurore', cursive;
+  font-weight: normal;
+}
+.size50{
+  font-size: 50px;
+}
+.size80{
+  font-size: 80px;
+}
+.size30{
+  font-size: 19px;
+}
+.size15{
+  font-size: 20px;
+}
+.size-paragraph{
+  width: 700px;
+  font-size: 15px;
+}
+.indent{
+  margin-left: 20px;
+}
+.bold{
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bounce{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.bounce:hover{
+  color: var(--color--cyan);
+  animation: bouncingFont .7s ease;
+}
+@keyframes bouncingFont {
+  0%{
+    transform: scale(1,1);
+  }
+  30%{
+    transform: scale(1.5,.7);
+  }
+  40%{
+    transform: scale(1.5,.7);
+  }
+  60%{
+    transform: scale(1,1);
+  }
+  85%{
+    transform: scale(1.3,.9);
+  }
+  100%{
+    transform: scale(1,1);
+  }
 }
