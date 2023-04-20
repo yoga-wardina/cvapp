@@ -5,7 +5,12 @@ import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import "./App.css";
+import "./css/App.css";
+import "./css/navbar.css";
+import "./css/home.css";
+import "./css/portfolio.css";
+import "./css/resume.css";
+import "./css/contact.css";
 
 function App() {
   const [activeSection, setActiveSection] = useState("section1");

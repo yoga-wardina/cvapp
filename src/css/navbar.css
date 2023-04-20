@@ -1,0 +1,35 @@
+/* NavBar CSS */
+.sideBar{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 100vh;
+    position: fixed;
+  }
+  .center{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .navLink {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color--gray);
+    border-bottom: 1px solid var(--color--gray);
+  }
+
+  .navLink:hover{
+    transition: .3s ease-in;
+    border-right: 2px solid var(--color--pink);
+    color: var(--color--pink);
+  }
+  .active{
+    transition: .3s ease-in;
+    border-right: 2px solid var(--color--cyan);
+    color: var(--color--cyan);
+  }
+
+/* NavBar CSS */

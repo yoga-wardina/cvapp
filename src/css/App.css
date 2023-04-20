@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  --color--light--gray: #888888;
+  --color--gray: #464646;
+  --color--dark-gray: #111010;
+  --color--dark: #131313;
+  --color--cyan: #03FFF5;
+  --color--pink: #FF0050;
+  --color--orange: #F3764B;
+  --color--green: #8bcf00;
+  --color--yellow: #e6ff00;
+  --color--blue: #4d91de;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: var(--color--dark);
+  background-image: url("../assets/bgImage.png");
+  background-size: cover;
+}
+/* Global Containers CSS */
+  .container{
+    cursor: default;
+    margin-left: 130px;
+  }
+  .testing{
+    display: block;
+    height: fit-content;
+  }
+  .shadow{
+    text-shadow: -5px -3px 0 var(--color--pink) ;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  .globalContainer{
+    scroll-margin: 20px;
+    scroll-behavior: smooth;
+    position: absolute;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+  }
+  #resume,#portfolio, #contact{
+    background-color: var(--color--dark);
+  }
+  #home,#resume, #contact{
+    height: 1000px;
+  }
+/* Global Styling and Containers CSS */
+div::-webkit-scrollbar {
+  width: 5px; 
+}
+div::-webkit-scrollbar-track {
+  background: var(--color--dark); 
+}
+div::-webkit-scrollbar-thumb {
+  background: var(--color--pink); 
+}
+div::-webkit-scrollbar-thumb:hover {
+  background: var(--color--pink); 
+}
+/* Background-color codings */
+.bg-color-cyan{
+  background-color: var(--color--cyan);
+}
+.bg-color-pink{
+  background-color: var(--color--pink);
+}
+.bg-color-dark{
+  background-color: var(--color--dark);
+}
+.bg-color-dark-gray{
+  background-color: var(--color--dark-gray);
+}
+/* font color codings */
+.color-light-gray{
+  color: var(--color--light--gray);
+}
+.color-gray{
+  color: var(--color--gray);
+}
+.color-dark-gray{
+  color: var(--color--dark-gray);
+}
+.color-dark{
+  color: var(--color--dark);
+}
+.color-cyan{
+  color: var(--color--cyan);
+}
+.color-pink{
+  color: var(--color--pink);
+}
+/* font Size codings */
+.fancyFont{
+  font-family: 'La Belle Aurore', cursive;
+  font-weight: normal;
+}
+.size50{
+  font-size: 50px;
+}
+.size80{
+  font-size: 80px;
+}
+.size30{
+  font-size: 19px;
+}
+.size15{
+  font-size: 20px;
+}
+.size-paragraph{
+  width: 700px;
+  font-size: 15px;
+}
+.indent{
+  margin-left: 20px;
+}
+.bold{
+  font-weight: 800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bounce{
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+.bounce:hover{
+  color: var(--color--cyan);
+  animation: bouncingFont .7s ease-out;
+}
+@keyframes bouncingFont {
+  0%{
+    transform: scale(1,1);
+  }
+  30%{
+    transform: scale(1.5,.7);
+  }
+  40%{
+    transform: scale(1.5,.7);
+  }
+  50%{
+    transform: scale(1,1);
+  }
+  75%{
+    transform: scale(1.3,.9);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+.box-shadow{
+  box-shadow: -5px -3px 0 var(--color--pink);
+}
+@media (max-aspect-ratio: 16/9) {
+  /* media querry aspect ratio */
+  body {
+    background-image: none;
+    background-color: var(--color--dark);
+    
+  }
+}

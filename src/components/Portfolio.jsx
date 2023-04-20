@@ -46,7 +46,6 @@ function Portfolio() {
   };
   return (
     <div className="portfolio">
-      <b className="size80 bold">I</b>
       <section id="portfolio" className="testing">
         <div className="headings">
           <div className="portHeadings">

@@ -1,0 +1,87 @@
+/* Resume CSS */
+.skill-grid{
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+.section-with-lines, .content-with-lines{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    height: fit-content;
+    border-left: 1px solid var(--color--gray);
+  }
+.section-with-lines{
+    padding-left: 10px;
+    border-left: 1px solid var(--color--cyan);
+  }
+
+.skill-list{
+    font-size: 20px;
+
+}
+.skill-list>p{
+    padding-bottom: 5px;
+}
+.progress-bar-baseline{
+    width: 99%;
+    background-color: var(--color--gray);
+    height: 2px;
+    margin-bottom: 10px;
+}
+.front-end{
+    width: 95%;
+    height: 2px;
+    background-color: var(--color--cyan);
+}
+.html-css{
+    width: 90%;
+    height: 2px;
+    background-color: var(--color--cyan);
+}
+.js{
+    width: 86%;
+    height: 2px;
+    background-color: var(--color--cyan);
+}
+.react{
+    width: 70%;
+    height: 2px;
+    background-color: var(--color--cyan);
+}
+
+.backend{
+    width: 80%;
+    height: 2px;
+    background-color: var(--color--pink);
+}
+
+.sql{
+    width: 79%;
+    height: 2px;
+    background-color: var(--color--pink);
+}
+.php{
+    width: 75%;
+    height: 2px;
+    background-color: var(--color--pink);
+}
+.next{
+    width: 70%;
+    height: 2px;
+    background-color: var(--color--pink);
+}
+.express{
+    width: 67%;
+    height: 2px;
+    background-color: var(--color--pink);
+}
+.content-heading{
+    padding: 5px;
+    width: fit-content;
+    font-size: 15px;
+}
+.cv-download{
+    width: 90%;
+}
+  /* Resume CSS */
+  
