@@ -2,6 +2,7 @@ import React from "react";
 
 function Navbar(props) {
   const { activeSection } = props;
+
   return (
     <div className="sideBar bg-color-dark-gray">
       <div className="center">

@@ -32,6 +32,7 @@
     transition:all 1.5s ease;
     transform: scale(1.5,1.5);
     opacity: 100%;
+    
   }
   .link-inside-div{
     display: flex;
@@ -53,5 +54,16 @@
     visibility: visible;
     scale: 7;
     transition:all .5s ease;
+  }
+  @keyframes slide {
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 100%;
+    }
+    100%{
+      width: 100%;
+    }
   }
 /* Portfolio CSS */
