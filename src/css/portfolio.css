@@ -7,17 +7,19 @@
     background-color: var(--color--dark-gray);
     text-align: center;
     width: 100%;
-    height: 650px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 0px;
     row-gap: 0px;
   }
   .noOverflow{
+    aspect-ratio: 1/1;
     overflow: hidden;
   }
   .portfolioGridContent{
-    height: 100%;
+    width: "100%";
+    transition: "all 0.5s ease";
+    aspect-ratio: 1/1;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -66,4 +68,46 @@
       width: 100%;
     }
   }
+
+.ProjectCOntainer{
+  width: 300px;
+  height: 300px;
+  visibility: hidden;
+  background-color: #0505053f;
+  z-index: 2;
+  position: fixed;
+  left:50vw;
+  transition: all .1s;
+  top: 40vh;
+}
+.Project-active{
+  top: 0;
+  transform: rotate(0deg);
+  left: 0;
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+}
+.ProjectCOntainer > button{
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 20px;
+}
 /* Portfolio CSS */
+@media screen and (max-width: 1366px) {
+  .portfolioGrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .portfolioGrid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+
+  .portfolioGrid{
+    grid-template-columns: 1fr 1fr;
+  }
+}

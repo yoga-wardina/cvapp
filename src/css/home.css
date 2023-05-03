@@ -86,4 +86,8 @@
     }
   }
   /* Home CSS */
-  
+  @media screen and (max-width: 480px) {
+    .headings{
+      padding: 10px;
+    }
+  }

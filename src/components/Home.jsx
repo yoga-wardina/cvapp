@@ -79,7 +79,7 @@ function Home() {
             ></div>
           </div>
           <div className="cta">
-            <a href="#section4">Contact me!</a>
+            <a href="#contact">Contact me!</a>
           </div>
         </div>
         <div className="scroll">
@@ -88,9 +88,9 @@ function Home() {
           <img src={arrowL} alt="" />
         </div>
         <div className="scroll-right">
-          <img className="animated-image" src={scrollB} alt="" />
+          <img className="animated-image" src={scrollW} alt="" />
           <br />
-          <img src={arrowR} alt="" />
+          <img src={arrowL} alt="" />
         </div>
       </section>
     </div>

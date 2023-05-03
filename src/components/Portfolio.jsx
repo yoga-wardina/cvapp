@@ -1,4 +1,6 @@
 import React from "react";
+import PortfolioContent from "./PortfolioContent";
+import { useState } from "react";
 import asset1 from "../assets/asset1.png";
 import asset2 from "../assets/asset2.png";
 import asset3 from "../assets/asset3.png";
@@ -28,17 +30,17 @@ function Portfolio() {
     { id: 9, backgroundImage: asset3 },
     { id: 10, backgroundImage: asset7 },
   ];
-  const DivWithBackgroundImage = ({ backgroundImage }) => {
+  const [value, setValue] = useState(null);
+  const handleChangeValue = (newValue) => {
+    setValue(newValue);
+  };
+  const DivWithBackgroundImage = ({ id, backgroundImage }) => {
     const styles = {
       backgroundImage: `url(${backgroundImage})`,
-      backgroundPosition: "center",
-      width: "100%",
-      transition: "all 0.5s ease",
     };
-
     return (
-      <div className="portfolioGridContent" style={styles}>
-        <a className="link-inside-div" href="#">
+      <div id={`${id}`} className="portfolioGridContent" style={styles}>
+        <a className="link-inside-div" onClick={() => handleChangeValue(id)}>
           <img src={view} alt="" />
         </a>
       </div>
@@ -46,6 +48,7 @@ function Portfolio() {
   };
   return (
     <div className="portfolio">
+      <PortfolioContent value={value} onChangeValue={handleChangeValue} />
       <section id="portfolio" className="testing">
         <div className="headings">
           <div className="portHeadings">
@@ -70,16 +73,16 @@ function Portfolio() {
                 dangerouslySetInnerHTML={{ __html: endH }}
               ></div>
             </h1>
-            <p className="size-paragraph">
+            <p className="size-paragraph color-light-gray">
               <div
                 className="size30 fancyFont color-gray"
                 dangerouslySetInnerHTML={{ __html: startP }}
               ></div>
-              A small collection of personals, passions, and schools' projects
-              I've worked on over the years. that I feel strongly represents my
+              A small collection of personals, passions, and school projects
+              I've worked on over the years that I feel strongly represents my
               skills as a Web developer, If you like what you see here and want
               want to work with me feel free to{" "}
-              <a className="color-cyan" href="#section4">
+              <a className="color-cyan" href="#contact">
                 Contact me
               </a>
               <div
@@ -97,7 +100,7 @@ function Portfolio() {
           {divs.map((div) => (
             <div className="noOverflow">
               <DivWithBackgroundImage
-                key={div.id}
+                id={div.id}
                 backgroundImage={div.backgroundImage}
               />
             </div>

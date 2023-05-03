@@ -33,3 +33,8 @@
   }
 
 /* NavBar CSS */
+@media screen and (max-width: 480px) {
+  .sideBar{
+    display: none;
+  }
+}

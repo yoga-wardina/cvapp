@@ -84,4 +84,8 @@
     width: 90%;
 }
   /* Resume CSS */
-  
+  @media screen and (max-width: 480px) {
+    .skill-grid{
+        grid-template-columns: 1fr;
+    }
+  }

@@ -18,12 +18,12 @@ function Resume() {
                 dangerouslySetInnerHTML={{ __html: startH }}
               ></div>
               <b className="shadow color-cyan">S</b>
-              <b className="bounce"> K </b>
+              <b className="bounce"> k </b>
               <b className="bounce"> i </b>
               <b className="bounce"> l </b>
               <b className="bounce"> l </b>
               <b className="bounce"> s </b>&nbsp;
-              <b className="bounce"> & </b>&nbsp;
+              <b className="bounce"> & </b>&nbsp; <br />
               <b className="shadow color-cyan">E</b>
               <b className="bounce"> x </b>
               <b className="bounce"> p </b>

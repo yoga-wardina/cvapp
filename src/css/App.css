@@ -39,6 +39,7 @@ body{
     text-shadow: -5px -3px 0 var(--color--pink) ;
   }
   a{
+    cursor: pointer;
     text-decoration: none;
     color: inherit;
   }
@@ -46,6 +47,7 @@ body{
     scroll-margin: 20px;
     scroll-behavior: smooth;
     position: absolute;
+    overflow-x: hidden;
     overflow-y: scroll;
     height: 100vh;
     width: 100%;
@@ -53,7 +55,7 @@ body{
   #resume,#portfolio, #contact{
     background-color: var(--color--dark);
   }
-  #home,#resume, #contact{
+  #home, #contact{
     height: 1000px;
   }
 /* Global Styling and Containers CSS */
@@ -120,7 +122,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 .size-paragraph{
   width: 700px;
-  font-size: 15px;
+  font-size: 20px;
 }
 .indent{
   margin-left: 20px;
@@ -171,5 +173,29 @@ div::-webkit-scrollbar-thumb:hover {
     background-image: none;
     background-color: var(--color--dark);
     
+  }
+}
+@media screen and (max-width: 480px) {
+  .size-paragraph{
+    width: fit-content;
+  }
+  #home,#resume, #contact{
+    margin: 10px;
+    height: fit-content;
+  }
+  .container{
+    margin-left: 0;
+  }
+  .size50{
+    font-size: 30px;
+  }
+  .size80{
+    font-size: 50px;
+  }
+  .size30{
+    font-size: 19px;
+  }
+  .size15{
+    font-size: 20px;
   }
 }
