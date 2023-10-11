@@ -1,17 +1,14 @@
 import React from "react";
-import { useRef } from "react";
-import { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
+import "../css/project.css";
 
-function ProjectsPage() {
-  const activeSection = "portfolio";
+const ProjectsPage = () => {
   return (
     <div className="wrapper">
       <div className="globalContainer">
-        <Navbar activeSection={activeSection} />
+        <b>suck cock</b>
         <div className="container"></div>
       </div>
     </div>
   );
-}
+};
 export default ProjectsPage;
