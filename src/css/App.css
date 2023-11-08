@@ -38,7 +38,7 @@ body{
   .shadow{
     text-shadow: -5px -3px 0 var(--color--pink) ;
   }
-  a{
+  a, span, button{
     cursor: pointer;
     text-decoration: none;
     color: inherit;

@@ -96,9 +96,18 @@
 }
 .projectContent{
   background-color: white;
-  height: 1200px;
+  height: max-content;
 }
-.contentWrapper > button{
+.projectContent > img{
+  width: 100%;
+}
+.closePorto{
+  background-color: black;
+  color: white;
+  border: 0px;
+  top: 10px;
+  left: 72%;
+  position: fixed;
   float: right;
   margin-left: auto;
   margin-right: 0;

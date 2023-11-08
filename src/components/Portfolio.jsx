@@ -1,14 +1,15 @@
 import React from "react";
 import PortfolioContent from "./PortfolioContent";
 import { useState } from "react";
-import asset1 from "../assets/asset1.png";
-import asset2 from "../assets/asset2.png";
-import asset3 from "../assets/asset3.png";
-import asset4 from "../assets/asset4.png";
-import asset5 from "../assets/asset5.png";
-import asset6 from "../assets/asset6.png";
-import asset7 from "../assets/asset7.png";
-import asset8 from "../assets/asset8.png";
+import asset1 from "../assets/asset1.jpg";
+import asset2 from "../assets/asset2.jpg";
+import asset3 from "../assets/asset3.jpg";
+import asset4 from "../assets/asset4.jpg";
+import asset5 from "../assets/asset5.jpg";
+import asset6 from "../assets/asset6.jpg";
+import asset7 from "../assets/asset7.jpg";
+import asset8 from "../assets/asset8.jpg";
+import asset9 from "../assets/asset9.jpg";
 import view from "../assets/view.png";
 
 function Portfolio() {
@@ -21,14 +22,14 @@ function Portfolio() {
   const divs = [
     { id: 1, backgroundImage: asset1 },
     { id: 2, backgroundImage: asset2 },
-    { id: 3, backgroundImage: asset3 },
-    { id: 4, backgroundImage: asset4 },
-    { id: 5, backgroundImage: asset5 },
-    { id: 6, backgroundImage: asset6 },
-    { id: 7, backgroundImage: asset8 },
-    { id: 8, backgroundImage: asset1 },
-    { id: 9, backgroundImage: asset3 },
-    { id: 10, backgroundImage: asset7 },
+    { id: 3, backgroundImage: asset9 },
+    { id: 4, backgroundImage: asset3 },
+    { id: 5, backgroundImage: asset4 },
+    { id: 6, backgroundImage: asset5 },
+    { id: 7, backgroundImage: asset6 },
+    { id: 8, backgroundImage: asset7 },
+    { id: 9, backgroundImage: asset8 },
+    { id: 10, backgroundImage: asset9 },
   ];
   const [value, setValue] = useState(null);
   const handleChangeValue = (newValue) => {
@@ -40,12 +41,13 @@ function Portfolio() {
     };
     return (
       <div id={`${id}`} className="portfolioGridContent" style={styles}>
-        <a className="link-inside-div" onClick={() => handleChangeValue(id)}>
+        <span className="link-inside-div" onClick={() => handleChangeValue(id)}>
           <img src={view} alt="" />
-        </a>
+        </span>
       </div>
     );
   };
+
   return (
     <div className="portfolio">
       <PortfolioContent value={value} onChangeValue={handleChangeValue} />
@@ -74,10 +76,10 @@ function Portfolio() {
               ></div>
             </h1>
             <p className="size-paragraph color-light-gray">
-              <div
+              <span
                 className="size30 fancyFont color-gray"
                 dangerouslySetInnerHTML={{ __html: startP }}
-              ></div>
+              ></span>
               A small collection of personals, passions, and school projects
               I've worked on over the years that I feel strongly represents my
               skills as a Web developer, If you like what you see here and want
@@ -85,13 +87,14 @@ function Portfolio() {
               <a className="color-cyan" href="#contact">
                 Contact me
               </a>
-              <div
+              <span
                 className="size30 fancyFont color-gray"
                 dangerouslySetInnerHTML={{ __html: endP }}
-              ></div>
+              ></span>
             </p>
           </div>
         </div>
+
         <div
           className="size30 fancyFont color-gray"
           dangerouslySetInnerHTML={{ __html: startSection }}
