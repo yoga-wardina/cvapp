@@ -16,25 +16,12 @@
     aspect-ratio: 1/1;
     overflow: hidden;
   }
-  .portfolioGridContent{
-    width: "100%";
-    transition: "all 0.5s ease";
-    aspect-ratio: 1/1;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 50%;
+  .portfolioGrid{
+    opacity: 70%;
   }
   .portfolioGridContent:hover{
-    transition:all 1.5s ease;
-    transform: scale(1.5,1.5);
     opacity: 100%;
-    
+    transform: scale(1.5,1.5); 
   }
   .link-inside-div{
     display: flex;
@@ -73,11 +60,10 @@
   width: 100vw;
   height: 100vh;
   visibility: hidden;
-  background-color: #0505053f;
   z-index: 2;
   position: fixed;
   left:100vw;
-  transition: all .5s;
+  transition: all 1s;
   top: 0;
 }
 .Project-active{
@@ -90,9 +76,9 @@
 }
 .contentWrapper{
   overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   height: 100vh;
-  width: 50%;
-  margin-left: 25%;
 }
 .projectContent{
   background-color: white;

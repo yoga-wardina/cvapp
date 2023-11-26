@@ -38,10 +38,27 @@ function Portfolio() {
   const DivWithBackgroundImage = ({ id, backgroundImage }) => {
     const styles = {
       backgroundImage: `url(${backgroundImage})`,
+      width: "100%",
+      transition: "all 1s ease",
+      aspectRatio: "1/1",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      textAlign: "center",
+      cursor: "pointer",
+      overflow: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
     };
     return (
-      <div id={`${id}`} className="portfolioGridContent" style={styles}>
-        <span className="link-inside-div" onClick={() => handleChangeValue(id)}>
+      <div
+        id={`${id}`}
+        className="portfolioGridContent"
+        style={styles}
+        onClick={() => handleChangeValue(id)}
+      >
+        <span className="link-inside-div">
           <img src={view} alt="" />
         </span>
       </div>

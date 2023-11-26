@@ -139,10 +139,11 @@ div::-webkit-scrollbar-thumb:hover {
   display: inline-block;
   margin: 0px;
   padding: 0px;
+  transition: all 1s ease;
 }
 .bounce:hover{
   color: var(--color--cyan);
-  animation: bouncingFont .7s ease-out;
+  animation: bouncingFont .7s ease-in-out;
 }
 @keyframes bouncingFont {
   0%{
