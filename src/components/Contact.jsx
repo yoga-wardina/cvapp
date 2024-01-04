@@ -7,7 +7,7 @@ function Contact() {
     <div className="contact">
       <section id="contact" className="testing">
         <h1>CONTACT ME</h1>
-        <FontAwesomeIcon icon={faCoffee} />
+        <i class="bi bi-list"></i>
       </section>
     </div>
   );

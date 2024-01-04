@@ -14,16 +14,20 @@ function PortfolioContent({ value, onChangeValue }) {
     onChangeValue(0);
   };
   const portos = [
-    { id: 1, content: porto1 },
-    { id: 2, content: porto2 },
-    { id: 3, content: porto3 },
-    { id: 4, content: porto4 },
-    { id: 5, content: porto5 },
-    { id: 6, content: porto6 },
-    { id: 7, content: porto7 },
-    { id: 8, content: porto8 },
-    { id: 9, content: porto9 },
-    { id: 10, content: porto10 },
+    { id: 1, content: porto1, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 2, content: porto2, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 3, content: porto3, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 4, content: porto4, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 5, content: porto5, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 6, content: porto6, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 7, content: porto7, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 8, content: porto8, link: "https://github.com/IhateTikTok69/cvapp" },
+    { id: 9, content: porto9, link: "https://github.com/IhateTikTok69/cvapp" },
+    {
+      id: 10,
+      content: porto10,
+      link: "https://github.com/IhateTikTok69/cvapp",
+    },
   ];
   return (
     <>
@@ -37,6 +41,9 @@ function PortfolioContent({ value, onChangeValue }) {
             <div className="close" onClick={closePorto}></div>
             <div className="projectContent">
               <img src={div.content} alt="" />
+              <a href={div.link} className="to-git ">
+                GitHub Link
+              </a>
             </div>
             <div className="close" onClick={closePorto}></div>
           </div>

@@ -9,8 +9,8 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 0px;
-    row-gap: 0px;
+    column-gap: 00px;
+    row-gap: 00px;
   }
   .noOverflow{
     aspect-ratio: 1/1;
@@ -39,10 +39,14 @@
     width: 10px;
     aspect-ratio: 1/1;
   }
-  .portfolioGridContent:hover .link-inside-div> img{
+  .portfolioGridContent:hover .link-inside-div> img {
     visibility: visible;
     scale: 7;
     transition:all .5s ease;
+  }
+  .inUse{
+    visibility: visible;
+    scale: 7;
   }
   @keyframes slide {
     0%{
@@ -98,6 +102,25 @@
   margin-left: auto;
   margin-right: 0;
   padding: 20px;
+}
+.to-git{
+  top: 90vh;
+  z-index: 5;
+  left: 44%;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  padding-left: 55px;
+  background-color: var(--color--pink);
+}
+.to-git:hover{
+  background-color: var(--color--cyan);
+  color: var(--color--dark-gray);
 }
 /* Portfolio CSS */
 @media screen and (max-width: 1366px) {

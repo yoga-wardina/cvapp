@@ -88,9 +88,9 @@ function Home() {
           <img src={arrowL} alt="" />
         </div>
         <div className="scroll-right">
-          <img className="animated-image" src={scrollW} alt="" />
+          <img className="animated-image" src={scrollB} alt="" />
           <br />
-          <img src={arrowL} alt="" />
+          <img src={arrowR} alt="" />
         </div>
       </section>
     </div>
