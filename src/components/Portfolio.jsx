@@ -36,58 +36,58 @@ function Portfolio() {
     setValue(newValue);
   };
   const DivWithBackgroundImage = ({ id, backgroundImage }) => {
-    const styles = {
-      backgroundImage: `url(${backgroundImage})`,
-      width: "100%",
-      transition: "all .5s ease",
-      aspectRatio: "1/1",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      textAlign: "center",
-      cursor: "pointer",
-      overflow: "hidden",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-    };
-    const activavted = {
-      backgroundImage: `url(${backgroundImage})`,
-      width: "100%",
-      transition: "all 1s ease",
-      aspectRatio: "1/1",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      textAlign: "center",
-      cursor: "pointer",
-      overflow: "hidden",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      opacity: "100%",
-      transform: "scale( 1.5, 1.5)",
-    };
-    const dontShowIt = {
-      width: "10px",
-    };
-    const showIt = {
-      visibility: "visible",
-      scale: "7",
-    };
-    return (
-      <div
-        id={`${id}`}
-        className={`portfolioGridContent`}
-        style={(styles, value === id ? activavted : styles)}
-        onClick={() => handleChangeValue(id)}
-      >
-        <span className="link-inside-div">
-          <img src={view} style={value === id ? showIt : dontShowIt} alt="" />
-        </span>
-      </div>
-    );
-  };
+		const styles = {
+		  backgroundImage: `url(${backgroundImage})`,
+		  width: "100%",
+		  transition: "all .5s ease",
+		  aspectRatio: "1/1",
+		  backgroundPosition: "center",
+		  backgroundSize: "cover",
+		  textAlign: "center",
+		  cursor: "pointer",
+		  overflow: "hidden",
+		  display: "flex",
+		  flexDirection: "column",
+		  alignItems: "center",
+		  justifyContent: "center",
+		};
+		const activavted = {
+		  backgroundImage: `url(${backgroundImage})`,
+		  width: "100%",
+		  transition: "all 1s ease",
+		  aspectRatio: "1/1",
+		  backgroundPosition: "center",
+		  backgroundSize: "cover",
+		  textAlign: "center",
+		  cursor: "pointer",
+		  overflow: "hidden",
+		  display: "flex",
+		  flexDirection: "column",
+		  alignItems: "center",
+		  justifyContent: "center",
+		  opacity: "100%",
+		  transform: "scale( 1.5, 1.5)",
+		};
+		const dontShowIt = {
+		  width: "10px",
+		};
+		const showIt = {
+		  visibility: "visible",
+		  scale: "7",
+		};
+		return (
+		  <div
+			id={`${id}`}
+			className={`portfolioGridContent`}
+			style={(styles, value === id ? activavted : styles)}
+			onClick={() => handleChangeValue(id)}
+		  >
+			<span className="link-inside-div">
+			  <img src={view} style={value === id ? showIt : dontShowIt} alt="" />
+			</span>
+		  </div>
+		);
+	};
 
   return (
     <div className="portfolio">

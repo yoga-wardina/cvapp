@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio";
 import Resume from "../components/Resume";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
+import "../output.css";
 import "../css/App.css";
 import "../css/navbar.css";
 import "../css/home.css";
@@ -53,7 +54,7 @@ function HomePage() {
     <div className="wrapper">
       <div className="globalContainer" ref={globalContainerRef}>
         <Navbar activeSection={activeSection} />
-        <div className="container">
+        <div className="containers">
           <Home />
           <Portfolio />
           <Resume />

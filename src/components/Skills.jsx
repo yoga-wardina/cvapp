@@ -108,7 +108,7 @@ function Skills() {
           </div>
           <p>Jquery</p>
           <div className="progress-bar-baseline">
-            <div className="red90"></div>
+            <div className="red80"></div>
           </div>
           <p>Bootsrtap / tailwind CSS</p>
           <div className="progress-bar-baseline">

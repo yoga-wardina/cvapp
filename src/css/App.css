@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html{
   scroll-behavior: smooth;
@@ -28,7 +31,7 @@ body{
   background-size: cover;
 }
 /* Global Containers CSS */
-  .container{
+  .containers{
     cursor: default;
     margin-left: 130px;
   }
@@ -56,7 +59,7 @@ body{
   #resume,#portfolio, #contact{
     background-color: var(--color--dark);
   }
-  #home, #contact{
+  #home,#resume{
     height: 1000px;
   }
 /* Global Styling and Containers CSS */
@@ -180,7 +183,10 @@ div::-webkit-scrollbar-thumb:hover {
     
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 880px) {
+  .containers{
+    margin: 0px;
+  }
   .size-paragraph{
     width: fit-content;
   }

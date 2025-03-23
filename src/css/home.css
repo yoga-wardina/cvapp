@@ -22,11 +22,6 @@
     height: 50px;
     text-align: center;
   }
-  .cta > a{
-    border: 1px solid;
-    padding: 10px 20px;
-    animation: changingColor 2.5s ease-in-out infinite;
-  }
   @keyframes changingColor {
     0% {
       color: #03FFF5;
@@ -86,7 +81,7 @@
     }
   }
   /* Home CSS */
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 880px) {
     .headings{
       padding: 10px;
     }

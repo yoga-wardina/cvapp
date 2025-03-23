@@ -29,18 +29,25 @@ function PortfolioContent({ value, onChangeValue }) {
       link: "https://github.com/IhateTikTok69/cvapp",
     },
   ];
+	pv_category_status: data.pv_category_status,
+    pv_category_provider: data.pv_category_provider,
+    pv_category_desc: data.pv_category_desc,
+    pv_category_struck: data.pv_category_struck,
+    pv_category_name: data.pv_category_name,
+  console.log(value)
   return (
     <>
       {portos.map((div) => (
         <div
-          className={`ProjectCOntainer ${
-            value === div.id ? "Project-active" : ""
-          }`}
+          className={`ProjectCOntainer ${value === div.id ? "Project-active" : ""}`}
         >
           <div className="contentWrapper">
             <div className="close" onClick={closePorto}></div>
             <div className="projectContent">
               <img src={div.content} alt="" />
+              <button className="closePorto shadow" onClick={closePorto}>
+                X
+              </button>
               <a href={div.link} className="to-git ">
                 GitHub Link
               </a>

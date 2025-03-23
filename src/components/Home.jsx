@@ -3,7 +3,7 @@ import scrollW from "../assets/scroll.png";
 import scrollB from "../assets/scroll B.png";
 import arrowL from "../assets/arrow.png";
 import arrowR from "../assets/arrow B.png";
-
+import idk from "../assets/arrows.png";
 function Home() {
   const startH = "&lt;h1&gt;";
   const endH = "&lt;/h1&gt;";
@@ -26,7 +26,11 @@ function Home() {
             className="size30 fancyFont indent color-gray"
             dangerouslySetInnerHTML={{ __html: startBody }}
           ></div>
-          <div className="welcome size50">
+          <div className="welcome size80">
+            <img src={idk} className="hover-me hover-style" alt="" />{" "}
+            <b className="fancyFont color-gray hover-me hover-style2">
+              HOVER ME
+            </b>
             <h1>
               <div
                 className="size30 fancyFont color-gray"
@@ -65,7 +69,6 @@ function Home() {
                 dangerouslySetInnerHTML={{ __html: endH }}
               ></div>
             </h1>
-
             <div
               className="size30 fancyFont color-gray"
               dangerouslySetInnerHTML={{ __html: startP }}

@@ -91,12 +91,16 @@
 .projectContent > img{
   width: 100%;
 }
+.close{
+  display: block;
+}
 .closePorto{
+  display: none;
   background-color: black;
   color: white;
   border: 0px;
   top: 10px;
-  left: 72%;
+  left: 85%;
   position: fixed;
   float: right;
   margin-left: auto;
@@ -124,6 +128,19 @@
 }
 /* Portfolio CSS */
 @media screen and (max-width: 1366px) {
+  .closePorto{
+    display: block;
+  }
+  .to-git{
+    left: 25%;
+    bottom: 20px;
+  }
+  .contentWrapper{
+    display: block;
+  }
+  .close{
+    display: none;
+  }
   .portfolioGrid{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

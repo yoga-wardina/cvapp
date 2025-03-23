@@ -1,0 +1,61 @@
+.contact-containers{
+    width: 80%;
+    margin-left: 10%;
+    border: 0px solid white;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.home{
+    position: relative;
+}
+.hover-me{
+    position: absolute;
+}
+.hover-style{
+    top: 420px;
+    left: 410px;
+    z-index: 3;
+    height: 50px;
+}
+.left-content{
+    padding-left: 5rem;
+}
+.hover-style2{
+    top: 385px;
+    left: 400px;
+    z-index: 3;
+    font-size: 25px;
+}
+.blank{
+    margin-bottom: 30px;
+}
+span:hover,a:hover{
+    color: var(--color--cyan);
+}
+.grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.cta{
+    border: 1px solid;
+  padding: 10px 20px;
+  animation: changingColor 2.5s ease-in-out infinite;
+}
+.right-content{
+    padding-right: 30px;
+}
+@media screen and (max-width: 880px){
+    .hover-style2{
+        display: none;
+    }
+    .hover-style{
+        display: none;
+    }
+    .left-content{
+        padding-left: 0px;
+    }
+    .right-content{
+        padding-right: 20px;
+    }
+}
